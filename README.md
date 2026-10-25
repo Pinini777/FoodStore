@@ -1,6 +1,6 @@
 # Food Store: TypeScript y Autenticación
 
-Trabajo integrador de Programación III. Es la continuación del TP de JavaScript: la tienda ahora está hecha con **TypeScript + Vite** y tiene registro, login y protección de rutas según el rol del usuario (`admin` o `client`), usando `localStorage` como base de datos.
+Trabajo integrador de Typescript. Es la continuación del TP de JavaScript: la tienda ahora está hecha con **TypeScript + Vite** y tiene registro, login y protección de rutas según el rol del usuario (`admin` o `client`), usando `localStorage` como base de datos.
 
 La estructura de carpetas sigue la del repositorio base [chiro45/proteger_rutas](https://github.com/chiro45/proteger_rutas).
 
@@ -124,7 +124,9 @@ TP_PinoEzequiel_FoodStore/
 ## TypeScript
 
 - `tsconfig.json` tiene `strict: true` y no se usa `any` en ningún archivo.
-- `Rol` es `"client" | "admin"` y `Categoria` es la lista de categorías posibles, así no se puede escribir una que no exista.
+- **Enums:** `Rol` (`Rol.ADMIN`, `Rol.CLIENT`) y `ClaveStorage` para las claves del `localStorage` (`"users"` y `"userData"`). Los valores son strings, así que en el `localStorage` se guardan como `"admin"` y `"client"`.
+- `Categoria` es la lista de categorías posibles, así no se puede escribir una que no exista.
+- En el `tsconfig.json` saqué la opción `erasableSyntaxOnly` que venía en el repositorio base, porque no permite usar enums.
 - `IUser`, `IUserSession`, `IProducto` e `IResultado` definen la forma de cada dato.
 - Los elementos del DOM están tipados (`HTMLFormElement`, `HTMLInputElement`, etc.).
 

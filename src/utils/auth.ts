@@ -1,5 +1,6 @@
 import type { IUser, IUserSession } from "../types/IUser";
 import type { IResultado } from "../types/IResultado";
+import { Rol } from "../types/Rol";
 import {
   getUsers,
   saveUsers,
@@ -9,17 +10,17 @@ import {
 } from "./localStorage";
 import { navigate, RUTAS } from "./navigate";
 
-// como el registro no tiene selector de rol, todos los que se registran son "client".
+// como el registro no tiene selector de rol, todos los que se registran son client.
 // este admin se crea solo la primera vez para poder entrar al panel
 const ADMIN_INICIAL: IUser = {
   email: "admin@foodstore.com",
   password: "admin1234",
-  role: "admin",
+  role: Rol.ADMIN,
 };
 
 export const crearAdminInicial = (): void => {
   const users = getUsers();
-  const hayAdmin = users.some((user) => user.role === "admin");
+  const hayAdmin = users.some((user) => user.role === Rol.ADMIN);
 
   if (!hayAdmin) {
     users.push(ADMIN_INICIAL);
@@ -49,7 +50,7 @@ export const registrarUsuario = (email: string, password: string): IResultado =>
   const nuevoUsuario: IUser = {
     email: emailLimpio,
     password: password,
-    role: "client",
+    role: Rol.CLIENT,
   };
 
   users.push(nuevoUsuario);

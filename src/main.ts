@@ -1,13 +1,13 @@
 // "guard": se carga en todas las paginas y decide si el usuario puede verla o no
-import type { Rol } from "./types/Rol";
+import { Rol } from "./types/Rol";
 import { crearAdminInicial, getUsuarioLogueado } from "./utils/auth";
 import { navigate, homePorRol, RUTAS } from "./utils/navigate";
 
 // que rol hace falta segun la carpeta de la pagina.
 // null = pagina publica (login y registro)
 const rolNecesario = (ruta: string): Rol | null => {
-  if (ruta.includes("/pages/admin/")) return "admin";
-  if (ruta.includes("/pages/client/")) return "client";
+  if (ruta.includes("/pages/admin/")) return Rol.ADMIN;
+  if (ruta.includes("/pages/client/")) return Rol.CLIENT;
   return null;
 };
 
@@ -48,7 +48,7 @@ export const protegerRuta = (): void => {
 
   // un client no puede entrar a /admin/, lo mando a su zona.
   // el admin si puede ver la tienda
-  if (rol === "admin" && usuario.role !== "admin") {
+  if (rol === Rol.ADMIN && usuario.role !== Rol.ADMIN) {
     navigate(RUTAS.clientHome);
     return;
   }

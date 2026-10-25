@@ -1,5 +1,6 @@
 import type { Categoria } from "../../../types/Categoria";
 import type { IProducto } from "../../../types/IProducto";
+import { Rol } from "../../../types/Rol";
 import { categorias, productos } from "../../../data/productos";
 import { getUsuarioLogueado, logout } from "../../../utils/auth";
 
@@ -101,7 +102,7 @@ const mostrarUsuario = (): void => {
 
   usuarioActual.textContent = `Hola, ${usuario.email}`;
   // el link al panel solo lo ve el admin
-  itemAdmin.classList.toggle("oculto", usuario.role !== "admin");
+  itemAdmin.classList.toggle("oculto", usuario.role !== Rol.ADMIN);
 };
 
 formBusqueda.addEventListener("submit", (e: SubmitEvent) => {

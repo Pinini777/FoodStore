@@ -1,4 +1,4 @@
-import type { Rol } from "../types/Rol";
+import { Rol } from "../types/Rol";
 
 // BASE_URL es "/" en desarrollo y "/FoodStore/" en GitHub Pages (ver vite.config.ts)
 const BASE = import.meta.env.BASE_URL;
@@ -16,5 +16,5 @@ export const navigate = (ruta: string): void => {
 };
 
 export const homePorRol = (rol: Rol): string => {
-  return rol === "admin" ? RUTAS.adminHome : RUTAS.clientHome;
+  return rol === Rol.ADMIN ? RUTAS.adminHome : RUTAS.clientHome;
 };

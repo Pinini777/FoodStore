@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist --nojekyll"
+    "deploy": "npm run build && gh-pages -d dist --nojekyll --no-history -m \"Publico la página en GitHub Pages\""
   },
   "devDependencies": {
     "@types/node": "^24.7.1",

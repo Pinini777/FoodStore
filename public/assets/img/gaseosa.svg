@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-labelledby="t">
+  <title id="t">Vaso de gaseosa sonriente estilo rubber hose</title>
+  <rect width="300" height="200" fill="#F6E7C1"/>
+  <circle cx="150" cy="110" r="90" fill="none" stroke="#EBD39F" stroke-width="180" stroke-dasharray="17.67 17.67"/>
+  <ellipse cx="150" cy="186" rx="45" ry="7" fill="#1B1410" opacity=".18"/>
+  <g stroke="#1B1410" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M118 120 C88 118 80 96 82 74" fill="none"/>
+    <path d="M182 120 C212 122 222 100 220 80" fill="none"/>
+    <circle cx="82" cy="67" r="12" fill="#FFF"/>
+    <circle cx="220" cy="73" r="12" fill="#FFF"/>
+    <path d="M160 52 L178 14 L190 18" fill="none" stroke-width="10"/>
+    <path d="M160 52 L178 14 L190 18" fill="none" stroke="#C8352B" stroke-width="4"/>
+    <path d="M114 62 H186 L176 182 H124 Z" fill="#FFF8E8"/>
+    <path d="M116 86 H184 L182 104 H118 Z M120 132 H180 L178 150 H122 Z" fill="#C8352B"/>
+    <rect x="106" y="48" width="88" height="16" rx="8" fill="#2F6E6A"/>
+  </g>
+  <g stroke="#1B1410" stroke-width="3">
+    <ellipse cx="137" cy="112" rx="8" ry="12" fill="#FFF"/>
+    <ellipse cx="163" cy="112" rx="8" ry="12" fill="#FFF"/>
+  </g>
+  <ellipse cx="138" cy="116" rx="4.5" ry="7" fill="#1B1410"/>
+  <ellipse cx="164" cy="116" rx="4.5" ry="7" fill="#1B1410"/>
+  <path d="M138 116 l3 -6 l-5 0 z M164 116 l3 -6 l-5 0 z" fill="#FFF"/>
+  <path d="M140 156 Q150 170 160 156 Z" fill="#5A0F0C" stroke="#1B1410" stroke-width="3" stroke-linejoin="round"/>
+</svg>

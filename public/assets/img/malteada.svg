@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-labelledby="t">
+  <title id="t">Malteada de chocolate sonriente estilo rubber hose</title>
+  <rect width="300" height="200" fill="#F6E7C1"/>
+  <circle cx="150" cy="110" r="90" fill="none" stroke="#EBD39F" stroke-width="180" stroke-dasharray="17.67 17.67"/>
+  <ellipse cx="150" cy="186" rx="40" ry="7" fill="#1B1410" opacity=".18"/>
+  <g stroke="#1B1410" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M124 116 C96 112 92 140 98 156" fill="none"/>
+    <path d="M176 116 C206 112 214 92 210 72" fill="none"/>
+    <circle cx="99" cy="162" r="11" fill="#FFF"/>
+    <circle cx="210" cy="65" r="12" fill="#FFF"/>
+    <path d="M168 54 L182 12" fill="none" stroke="#2F6E6A" stroke-width="8"/>
+    <path d="M128 172 H172 L164 182 H136 Z" fill="#FFF8E8"/>
+    <path d="M146 150 H154 V172 H146 Z" fill="#FFF8E8"/>
+    <path d="M110 70 H190 L162 152 H138 Z" fill="#7A4326"/>
+    <path d="M106 72 Q104 50 124 52 Q130 34 150 40 Q170 34 176 52 Q196 50 194 72 Z" fill="#FFF8E8"/>
+    <circle cx="150" cy="30" r="9" fill="#C8352B"/>
+    <path d="M150 21 Q154 10 162 8" fill="none" stroke-width="3"/>
+  </g>
+  <g stroke="#1B1410" stroke-width="3">
+    <ellipse cx="139" cy="92" rx="8" ry="11" fill="#FFF"/>
+    <ellipse cx="161" cy="92" rx="8" ry="11" fill="#FFF"/>
+  </g>
+  <ellipse cx="140" cy="96" rx="4.5" ry="6.5" fill="#1B1410"/>
+  <ellipse cx="162" cy="96" rx="4.5" ry="6.5" fill="#1B1410"/>
+  <path d="M140 96 l3 -6 l-5 0 z M162 96 l3 -6 l-5 0 z" fill="#FFF"/>
+  <path d="M141 112 Q150 126 159 112 Z" fill="#5A0F0C" stroke="#1B1410" stroke-width="3" stroke-linejoin="round"/>
+</svg>

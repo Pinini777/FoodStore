@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store | Catálogo</title>
+    <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,0..100,0..1&amp;family=Nunito:wght@400;700;800&amp;display=swap">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+<body class="cargando">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-logo" src="/assets/img/logo.svg" alt="Logo de Food Store" width="72" height="72">
+            <div>
+                <h1>Food Store</h1>
+                <p class="brand-tagline">Hamburguesas, pizzas y algo más</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <p id="usuario-actual" class="usuario-actual"></p>
+            <ul>
+                <li><a href="#" class="activo">Inicio</a></li>
+                <li><a href="#">Mis Pedidos</a></li>
+                <li><a href="#">Carrito (<span id="contador-carrito">0</span>)</a></li>
+                <!-- solo se muestra si el usuario es admin -->
+                <li id="item-admin" class="oculto"><a class="nav-admin" href="../../admin/home/home.html">Panel Admin</a></li>
+                <li><button type="button" id="logoutButton" class="nav-boton">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+        <!-- CATEGORIAS -->
+        <aside class="sidebar">
+            <h2>Categorías</h2>
+            <!-- se carga desde home.ts -->
+            <ul id="lista-categorias" class="lista-categorias"></ul>
+        </aside>
+
+        <!-- PRODUCTOS -->
+        <main class="contenido">
+
+            <form id="form-busqueda" class="buscador">
+                <label for="input-busqueda">Buscar productos:</label>
+                <input type="search" id="input-busqueda" name="q" placeholder="Ej: Hamburguesa doble">
+                <button type="submit" class="btn btn-secundario">Buscar</button>
+            </form>
+
+            <h2 id="titulo-productos" class="titulo-seccion">Productos Destacados</h2>
+
+            <!-- se carga desde home.ts -->
+            <section id="contenedor-productos" class="grilla-productos"></section>
+            <p id="sin-resultados" class="sin-resultados oculto">No encontramos productos con esa búsqueda.</p>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© 2026 Food Store. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="./home.ts"></script>
+</body>
+</html>

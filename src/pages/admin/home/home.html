@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store | Panel de Administración</title>
+    <link rel="icon" href="/FoodStore/assets/img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,0..100,0..1&amp;family=Nunito:wght@400;700;800&amp;display=swap">
+  <script type="module" crossorigin src="/FoodStore/assets/adminHome-DHGxh6a0.js"></script>
+  <link rel="modulepreload" crossorigin href="/FoodStore/assets/main-hBd3-FF4.js">
+  <link rel="modulepreload" crossorigin href="/FoodStore/assets/productos-DmPu_ryk.js">
+  <link rel="stylesheet" crossorigin href="/FoodStore/assets/productos-CxZqq39F.css">
+</head>
+<body class="admin cargando">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="brand">
+            <img class="brand-logo" src="/FoodStore/assets/img/logo.svg" alt="Logo de Food Store" width="72" height="72">
+            <div>
+                <h1>Panel de Administración</h1>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <p id="usuario-actual" class="usuario-actual"></p>
+            <ul>
+                <li><a href="../../client/home/home.html">Volver a la Tienda</a></li>
+                <li><button type="button" id="logoutButton" class="nav-boton">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido contenido-admin">
+
+        <section class="panel">
+            <div class="panel-cabecera">
+                <h2>Gestión de Productos</h2>
+                <a href="#form-producto" class="btn btn-agregar">+ Nuevo Producto</a>
+            </div>
+
+            <div class="tabla-wrapper">
+                <table class="tabla-productos">
+                    <thead>
+                        <tr>
+                            <th class="num">ID</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th class="num">Precio</th>
+                            <th class="centro">Stock</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <!-- se carga desde home.ts -->
+                    <tbody id="tabla-productos-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel">
+            <details open>
+                <summary>Agregar Producto Rápido</summary>
+                <p id="mensaje-form" class="mensaje-form"></p>
+                <form id="form-producto" class="form-producto">
+                    <div class="campo">
+                        <label for="nombre">Nombre del Producto</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Lomito Completo" required>
+                    </div>
+                    <div class="campo">
+                        <label for="precio">Precio</label>
+                        <input type="number" id="precio" name="precio" min="0" step="0.01" placeholder="0.00" required>
+                    </div>
+                    <div class="campo">
+                        <label for="stock">Stock Inicial</label>
+                        <input type="number" id="stock" name="stock" min="0" step="1" placeholder="0" required>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+                        <!-- las opciones se cargan desde home.ts -->
+                        <select id="categoria" name="categoria" required>
+                            <option value="" selected disabled>Seleccione una opción...</option>
+                        </select>
+                    </div>
+                    <div class="campo campo-ancho">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" rows="3" placeholder="Ingresa los ingredientes..."></textarea>
+                    </div>
+                    <div class="campo-ancho">
+                        <button type="submit" class="btn btn-agregar">Guardar Producto</button>
+                    </div>
+                </form>
+            </details>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Panel de Administración - Food Store v1.0</p>
+    </footer>
+
+</body>
+</html>

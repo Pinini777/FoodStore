@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-labelledby="t">
+  <title id="t">Papas fritas con cheddar sonrientes estilo rubber hose</title>
+  <rect width="300" height="200" fill="#F6E7C1"/>
+  <circle cx="150" cy="110" r="90" fill="none" stroke="#EBD39F" stroke-width="180" stroke-dasharray="17.67 17.67"/>
+  <ellipse cx="150" cy="184" rx="60" ry="8" fill="#1B1410" opacity=".18"/>
+  <g stroke="#1B1410" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M110 140 C80 146 70 124 72 104" fill="none"/>
+    <path d="M190 140 C222 146 230 168 222 178" fill="none"/>
+    <circle cx="72" cy="97" r="12" fill="#FFF"/>
+    <circle cx="220" cy="180" r="11" fill="#FFF"/>
+    <g fill="#F5D05A">
+      <rect x="112" y="38" width="16" height="80" rx="3" transform="rotate(-12 120 78)"/>
+      <rect x="132" y="28" width="16" height="90" rx="3" transform="rotate(-4 140 73)"/>
+      <rect x="152" y="26" width="16" height="92" rx="3" transform="rotate(5 160 72)"/>
+      <rect x="172" y="36" width="16" height="82" rx="3" transform="rotate(13 180 77)"/>
+    </g>
+    <path d="M114 70 Q122 82 132 72 Q142 86 152 70 Q162 84 172 72 Q180 82 188 72 L186 100 H114 Z" fill="#F29A1F"/>
+    <path d="M100 98 H200 L188 178 H112 Z" fill="#C8352B"/>
+    <path d="M128 98 L132 178 M172 98 L168 178" stroke="#F6E7C1" stroke-width="8"/>
+  </g>
+  <g stroke="#1B1410" stroke-width="3">
+    <ellipse cx="136" cy="126" rx="9" ry="13" fill="#FFF"/>
+    <ellipse cx="164" cy="126" rx="9" ry="13" fill="#FFF"/>
+  </g>
+  <ellipse cx="137" cy="130" rx="5" ry="8" fill="#1B1410"/>
+  <ellipse cx="165" cy="130" rx="5" ry="8" fill="#1B1410"/>
+  <path d="M137 130 l3 -7 l-5 0 z M165 130 l3 -7 l-5 0 z" fill="#FFF"/>
+  <path d="M136 146 Q150 164 164 146 Z" fill="#5A0F0C" stroke="#1B1410" stroke-width="3" stroke-linejoin="round"/>
+</svg>
